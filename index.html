@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#061e3b" />
+    <title>الصادق الأمين | تخليص الجمارك والشحن والنقل</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-label="الصادق الأمين">
+        <div class="accent accent-one"></div>
+        <div class="accent accent-two"></div>
+        <div class="logo-card">
+          <img src="img/Medium%20Logo.png" alt="لوجو الصادق الأمين" />
+        </div>
+        <p>لتخليص الجمارك والشحن والنقل</p>
+        <div class="values"><span>ثقة</span><i></i><span>سرعة</span><i></i><span>أمان</span></div>
+      </section>
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div class="section-title">
+          <span>تواصل معنا</span>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-button phone-contact" href="tel:+201114624320" data-number="201114624320" aria-label="تواصل على 01114624320">
+            <img src="img/011.png" alt="اتصل على 01114624320" />
+          </a>
+          <a class="contact-button phone-contact" href="tel:+201222221952" data-number="201222221952" aria-label="تواصل على 01222221952">
+            <img src="img/012.png" alt="اتصل على 01222221952" />
+          </a>
+          <a class="contact-button" href="https://www.facebook.com/elsadek.elamin1" target="_blank" rel="noopener" aria-label="صفحتنا على فيسبوك">
+            <img src="img/facebook.png" alt="elsadek.elamin1 على فيسبوك" />
+          </a>
+          <a class="contact-button" href="https://www.google.com/maps/search/?api=1&query=Cairo" target="_blank" rel="noopener" aria-label="فرع القاهرة">
+            <img src="img/cairo.png" alt="فرع القاهرة" />
+          </a>
+        </div>
+      </section>
+
+      <footer>الصادق الأمين لتخليص الجمارك والشحن والنقل</footer>
+    </main>
+
+    <dialog class="contact-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="إغلاق">×</button>
+      <p id="dialog-title">تحب تتواصل إزاي؟</p>
+      <div class="dialog-actions">
+        <a id="whatsapp-link" class="dialog-action whatsapp" href="#">واتساب</a>
+        <a id="call-link" class="dialog-action call" href="#">مكالمة</a>
+      </div>
+    </dialog>
+
+    <script>
+      const dialog = document.querySelector('.contact-dialog');
+      const whatsappLink = document.querySelector('#whatsapp-link');
+      const callLink = document.querySelector('#call-link');
+
+      document.querySelectorAll('.phone-contact').forEach((button) => {
+        button.addEventListener('click', (event) => {
+          event.preventDefault();
+          const number = button.dataset.number;
+          whatsappLink.href = `https://wa.me/${number}`;
+          callLink.href = `tel:+${number}`;
+          dialog.showModal();
+        });
+      });
+
+      document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
+      dialog.addEventListener('click', (event) => {
+        if (event.target === dialog) dialog.close();
+      });
+    </script>
+  </body>
+</html>
