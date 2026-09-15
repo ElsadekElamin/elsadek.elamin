@@ -1,77 +1,972 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#061e3b" />
-    <title>الصادق الأمين | تخليص الجمارك والشحن والنقل</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="page-shell">
-      <section class="hero" aria-label="الصادق الأمين">
-        <div class="accent accent-one"></div>
-        <div class="accent accent-two"></div>
-        <div class="logo-card">
-          <img src="img/Medium%20Logo.png" alt="لوجو الصادق الأمين" />
-        </div>
-        <p>لتخليص الجمارك والشحن والنقل</p>
-        <div class="values"><span>ثقة</span><i></i><span>سرعة</span><i></i><span>أمان</span></div>
-      </section>
-      <section class="contact-section" aria-labelledby="contact-title">
-        <div class="section-title">
-          <span>تواصل معنا</span>
-        </div>
-        <div class="contact-grid">
-          <a class="contact-button phone-contact" href="tel:+201114624320" data-number="201114624320" aria-label="تواصل على 01114624320">
-            <img src="img/011.png" alt="اتصل على 01114624320" />
-          </a>
-          <a class="contact-button phone-contact" href="tel:+201222221952" data-number="201222221952" aria-label="تواصل على 01222221952">
-            <img src="img/012.png" alt="اتصل على 01222221952" />
-          </a>
-          <a class="contact-button" href="https://www.facebook.com/elsadek.elamin1" target="_blank" rel="noopener" aria-label="صفحتنا على فيسبوك">
-            <img src="img/facebook.png" alt="elsadek.elamin1 على فيسبوك" />
-          </a>
-          <a class="contact-button" href="https://maps.app.goo.gl/r9b53JkGqyKaft6X9" target="_blank" rel="noopener" aria-label="فرع القاهرة">
-            <img src="img/cairo.png" alt="فرع القاهرة" />
-          </a>
-        </div>
-      </section>
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="الصادق الأمين للتخليص الجمركي والشحن والنقل والخدمات اللوجستية — منذ عام 2005." name="description"/>
+  <title>
+   الصادق الأمين | التخليص الجمركي والشحن والخدمات اللوجستية
+  </title>
+  
+   <link rel="stylesheet" href="style.css">
+  <style>
+   .partner-logo {
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+   }
+   .partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+   }
+   .partner-name {
+    margin-top: 8px;
+    line-height: 1.35;
+    text-align: center;
+   }
+  </style>
 
-      <footer>الصادق الأمين لتخليص الجمارك والشحن والنقل</footer>
-    </main>
-
-    <dialog class="contact-dialog" aria-labelledby="dialog-title">
-      <button class="dialog-close" type="button" aria-label="إغلاق">×</button>
-      <p id="dialog-title">تحب تتواصل إزاي؟</p>
-      <div class="dialog-actions">
-        <a id="whatsapp-link" class="dialog-action whatsapp" href="#">واتساب</a>
-        <a id="call-link" class="dialog-action call" href="#">مكالمة</a>
+</head>
+ <body>
+  <header>
+   <nav class="container">
+    <a class="nav-logo" href="#home">
+     <img alt="الصادق الأمين" src="assets/logoooo.png"/>
+     <span data-i18n="brand">
+      الصادق الأمين
+     </span>
+    </a>
+    <div class="nav-links">
+     <a data-i18n="nav_home" href="#home">
+      الرئيسية
+     </a>
+     <a data-i18n="nav_about" href="#about">
+      عنا
+     </a>
+     <!-- <a data-i18n="nav_portfolio" href="#portfolio">
+      معرض الأعمال
+     </a> -->
+     <a data-i18n="nav_partners" href="#partners">
+      شركاؤنا
+     </a>
+     <a data-i18n="nav_contact" href="#contact">
+      تواصل معنا
+     </a>
+    </div>
+    <div class="nav-tools">
+     <button aria-label="تغيير اللغة" class="lang-switch" id="langSwitch" type="button">
+      <span class="lang-globe">◎</span>
+      <span class="lang-option lang-ar">ع</span>
+      <span class="lang-option lang-en">EN</span>
+     </button>
+     <a class="btn btn-gold nav-cta" data-i18n="nav_call" href="#contact">
+      اتصل بنا
+     </a>
+     <button aria-label="فتح القائمة" class="menu" data-i18n-aria="menu_open">
+      ☰
+     </button>
+    </div>
+   </nav>
+  </header>
+  <main>
+   <section class="hero" id="home">
+    <div class="container hero-grid">
+     <div class="hero-copy">
+      <div class="eyebrow">
+       <span>
+       </span>
       </div>
-    </dialog>
+      <h1 data-i18n="hero_title">
+       شريكك الموثوق في
+       <span class="gold-text">
+        التخليص والشحن
+       </span>
+       والخدمات اللوجستية
+      </h1>
+      <p data-i18n="hero_desc">
+       حلول متكاملة للتخليص الجمركي، الشحن الدولي، النقل والخدمات اللوجستية — بخبرة تتجاوز 20 عامًا، مع السرعة والدقة والمتابعة.
+      </p>
+      <div class="hero-actions">
+       <a class="btn btn-gold" data-i18n="hero_cta" href="#contact">
+        اطلب استشارتك الآن
+       </a>
+       <a class="btn btn-outline" data-i18n="hero_services" href="#services">
+        اكتشف خدماتنا
+       </a>
+      </div>
+      <div class="hero-stats">
+       <div class="stat">
+        <b>
+         2005
+        </b>
+        <span data-i18n="founded">
+         عام التأسيس
+        </span>
+       </div>
+       <div class="stat">
+        <b>
+         +20
+        </b>
+        <span data-i18n="experience">
+         عامًا من الخبرة
+        </span>
+       </div>
+       <div class="stat">
+        <b>
+         4
+        </b>
+        <span data-i18n="fields">
+         مجالات خدمة متكاملة
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="hero-art">
+      <div class="glow">
+      </div>
+      <img alt="شعار الصادق الأمين" src="assets/logo.png"/>
+     </div>
+    </div>
+   </section>
+   <section class="about" id="about">
+    <div class="container about-grid">
+     <div class="about-card">
+      <img alt="الصادق الأمين" src="assets/logo.png"/>
+     </div>
+     <div class="about-copy">
+      <div class="section-kicker" data-i18n="about_kicker">
+       من نحن
+      </div>
+      <h3 data-i18n="about_title">
+       خبرة عملية وحلول لوجستية متكاملة
+      </h3>
+      <p data-i18n="about_p1">
+       تأسست شركة الصادق الأمين للتخليص الجمركي والشحن والنقل والخدمات اللوجستية عام 2005. نعمل على دعم العملاء طوال دورة الاستيراد والتصدير، من تجهيز الشحنة والمستندات وحتى التخليص والنقل والتسليم النهائي.
+      </p>
+      <p data-i18n="about_p2">
+       نعتمد على الخبرة العملية، الالتزام بالمواعيد، الدقة في الإجراءات والمتابعة المستمرة، مع بناء علاقات طويلة الأمد مع العملاء والموردين وشركات الشحن والخطوط الملاحية والجهات ذات الصلة.
+      </p>
+      <div class="checks">
+       <div class="check">
+        <i>
+         ✓
+        </i>
+        <span data-i18n="check1">
+         سرعة وكفاءة في الإنجاز
+        </span>
+       </div>
+       <div class="check">
+        <i>
+         ✓
+        </i>
+        <span data-i18n="check2">
+         دقة والتزام بالمستندات
+        </span>
+       </div>
+       <div class="check">
+        <i>
+         ✓
+        </i>
+        <span data-i18n="check3">
+         متابعة مستمرة للشحنات
+        </span>
+       </div>
+       <div class="check">
+        <i>
+         ✓
+        </i>
+        <span data-i18n="check4">
+         حلول مناسبة لكل عميل
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="services" id="services">
+    <div class="container">
+     <div class="section-head">
+      <div class="section-kicker" data-i18n="services_kicker">
+       خدماتنا
+      </div>
+      <h2 data-i18n="services_title">
+       كل ما تحتاجه شحنتك في مكان واحد
+      </h2>
+      <p data-i18n="services_desc">
+       خدمات متكاملة تساعدك على إدارة إجراءاتك الجمركية والشحن والنقل حتى وصول البضاعة وتسليمها.
+      </p>
+     </div>
+     <div class="service-grid">
+      <article class="service">
+       <div class="icon">
+        ⚓
+       </div>
+       <h3 data-i18n="svc_customs">
+        التخليص الجمركي
+       </h3>
+       <p data-i18n="svc_customs_desc">
+        إنهاء إجراءات الشحنات الواردة والصادرة بكفاءة.
+       </p>
+       <ul>
+        <li data-ar="تخليص الواردات والصادرات" data-en="Import & export clearance">
+         تخليص الواردات والصادرات
+        </li>
+        <li data-ar="مراجعة المستندات" data-en="Document review">
+         مراجعة المستندات
+        </li>
+        <li data-ar="متابعة الفحص والإفراج" data-en="Inspection & release follow-up">
+         متابعة الفحص والإفراج
+        </li>
+        <li data-ar="التنسيق مع الجهات المعنية" data-en="Coordination with relevant authorities">
+         التنسيق مع الجهات المعنية
+        </li>
+       </ul>
+      </article>
+      <article class="service">
+       <div class="icon">
+        ✈
+       </div>
+       <h3 data-i18n="svc_freight">
+        الشحن الدولي
+       </h3>
+       <p data-i18n="svc_freight_desc">
+        حلول شحن حسب طبيعة وحجم ووجهة كل شحنة.
+       </p>
+       <ul>
+        <li data-ar="شحن بحري وجوي وبري" data-en="Sea, air & land freight">
+         شحن بحري وجوي وبري
+        </li>
+        <li data-ar="FCL و LCL" data-en="FCL & LCL">
+         FCL و LCL
+        </li>
+        <li data-ar="شحن الحاويات" data-en="Container shipping">
+         شحن الحاويات
+        </li>
+        <li data-ar="متابعة الشحنة حتى الوصول" data-en="Shipment tracking to destination">
+         متابعة الشحنة حتى الوصول
+        </li>
+       </ul>
+      </article>
+      <article class="service">
+       <div class="icon">
+        🚚
+       </div>
+       <h3 data-i18n="svc_transport">
+        النقل
+       </h3>
+       <p data-i18n="svc_transport_desc">
+        تنظيم نقل البضائع بين الموانئ والمنافذ والمخازن والعملاء.
+       </p>
+       <ul>
+        <li data-ar="نقل الحاويات" data-en="Container transportation">
+         نقل الحاويات
+        </li>
+        <li data-ar="البضائع العامة" data-en="General cargo">
+         البضائع العامة
+        </li>
+        <li data-ar="من الميناء إلى المخزن" data-en="Port-to-warehouse">
+         من الميناء إلى المخزن
+        </li>
+        <li data-ar="التسليم المحلي" data-en="Local delivery">
+         التسليم المحلي
+        </li>
+       </ul>
+      </article>
+      <article class="service">
+       <div class="icon">
+        ◈
+       </div>
+       <h3 data-i18n="svc_logistics">
+        الخدمات اللوجستية
+       </h3>
+       <p data-i18n="svc_logistics_desc">
+        حلول متكاملة من تجهيز الشحنة وحتى التسليم النهائي.
+       </p>
+       <ul>
+        <li data-ar="متابعة وتتبع الشحنات" data-en="Shipment tracking">
+         متابعة وتتبع الشحنات
+        </li>
+        <li data-ar="التنسيق مع الموردين" data-en="Supplier coordination">
+         التنسيق مع الموردين
+        </li>
+        <li data-ar="متابعة المستندات" data-en="Documentation follow-up">
+         متابعة المستندات
+        </li>
+        <li data-ar="إدارة النقل والتسليم" data-en="Transport & delivery management">
+         إدارة النقل والتسليم
+        </li>
+       </ul>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="why">
+    <div class="container">
+     <div class="section-head">
+      <div class="section-kicker" data-i18n="why_kicker">
+       لماذا الصادق الأمين؟
+      </div>
+      <h2 data-i18n="why_title">
+       التزام واضح في كل خطوة
+      </h2>
+      <p data-i18n="why_desc">
+       الخبرة بالنسبة لنا ليست عدد سنوات فقط، بل القدرة على التعامل مع التحديات وتقديم حلول عملية وفعالة.
+      </p>
+     </div>
+     <div class="why-grid">
+      <div class="why-card">
+       <strong data-ar="خبرة منذ 2005" data-en="More Than 20 Years of Experience">
+        خبرة منذ 2005
+       </strong>
+       <p data-ar="أكثر من 20 عامًا في التخليص والشحن والنقل والخدمات اللوجستية." data-en="20+ years in customs clearance, freight forwarding, transportation and logistics.">
+        أكثر من 20 عامًا في التخليص والشحن والنقل والخدمات اللوجستية.
+       </p>
+      </div>
+      <div class="why-card">
+       <strong data-ar="خدمة متكاملة" data-en="Integrated Services">
+        خدمة متكاملة
+       </strong>
+       <p data-ar="نجمع الخدمات الجمركية والشحن والنقل واللوجستيات في حل واحد." data-en="Customs, freight, transportation and logistics in one integrated solution.">
+        نجمع الخدمات الجمركية والشحن والنقل واللوجستيات في حل واحد.
+       </p>
+      </div>
+      <div class="why-card">
+       <strong data-ar="المصداقية والشفافية" data-en="Reliability & Transparency">
+        المصداقية والشفافية
+       </strong>
+       <p data-ar="نتعامل مع كل شحنة بمسؤولية ودقة ووضوح." data-en="Every shipment is handled with responsibility, accuracy and transparency.">
+        نتعامل مع كل شحنة بمسؤولية ودقة ووضوح.
+       </p>
+      </div>
+      <div class="why-card">
+       <strong data-ar="متابعة مستمرة" data-en="Continuous Follow-Up">
+        متابعة مستمرة
+       </strong>
+       <p data-ar="متابعة الشحنات والإجراءات والتنسيق خطوة بخطوة." data-en="Continuous shipment and procedure follow-up, step by step.">
+        متابعة الشحنات والإجراءات والتنسيق خطوة بخطوة.
+       </p>
+      </div>
+      <div class="why-card">
+       <strong data-ar="تركيز على العميل" data-en="Customer Focus">
+        تركيز على العميل
+       </strong>
+       <p data-ar="نفهم احتياجات كل عميل ونقدم حلولًا تناسب نشاطه." data-en="We understand each client's needs and tailor practical solutions.">
+        نفهم احتياجات كل عميل ونقدم حلولًا تناسب نشاطه.
+       </p>
+      </div>
+      <div class="why-card">
+       <strong data-ar="خدمة احترافية" data-en="Professional Service">
+        خدمة احترافية
+       </strong>
+       <p data-ar="نسعى للحفاظ على معايير عالية من الجودة والكفاءة." data-en="We maintain high standards of quality and efficiency.">
+        نسعى للحفاظ على معايير عالية من الجودة والكفاءة.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="sectors">
+    <div class="container">
+     <div class="section-head">
+      <div class="section-kicker" data-i18n="sectors_kicker">
+       قطاعات نخدمها
+      </div>
+      <h2 data-i18n="sectors_title">
+       حلول تناسب أنشطة وقطاعات متعددة
+      </h2>
+      <p data-i18n="sectors_desc">
+       نقدم خدماتنا لمجموعة متنوعة من الشركات والأنشطة التجارية والصناعية.
+      </p>
+     </div>
+     <div class="sector-grid">
+      <div class="sector">
+       <span>
+        01
+       </span>
+       <span data-ar="شركات الاستيراد والتصدير" data-en="Import & Export Companies">
+        شركات الاستيراد والتصدير
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        02
+       </span>
+       <span data-ar="الشركات التجارية" data-en="Trading Companies">
+        الشركات التجارية
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        03
+       </span>
+       <span data-ar="شركات التصنيع" data-en="Manufacturing Companies">
+        شركات التصنيع
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        04
+       </span>
+       <span data-ar="الشركات الصناعية" data-en="Industrial Companies">
+        الشركات الصناعية
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        05
+       </span>
+       <span data-ar="شركات الإضاءة والكهرباء" data-en="Electrical & Lighting Companies">
+        شركات الإضاءة والكهرباء
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        06
+       </span>
+       <span data-ar="شركات الأدوية ومستحضرات التجميل" data-en="Pharmaceutical & Cosmetics Companies">
+        شركات الأدوية ومستحضرات التجميل
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        07
+       </span>
+       <span data-ar="شركات الأغذية" data-en="Food Companies">
+        شركات الأغذية
+       </span>
+      </div>
+      <div class="sector">
+       <span>
+        08
+       </span>
+       <span data-ar="المعدات والأجهزة" data-en="Equipment & Machinery Companies">
+        المعدات والأجهزة
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- <section class="portfolio" id="portfolio">
+    <div class="container">
+     <div class="section-head">
+      <div class="section-kicker" data-i18n="portfolio_kicker">
+       معرض الأعمال
+      </div>
+      <h2 data-i18n="portfolio_title">
+       هوية بصرية تعكس الثقة والاحتراف
+      </h2>
+      <p data-i18n="portfolio_desc">
+       نموذج من الهوية البصرية والتصميم المستخدم للعلامة التجارية.
+      </p>
+     </div> -->
+     <!-- <div class="portfolio-card portfolio-slider" id="portfolioSlider">
+      <div class="portfolio-track">
+       <article class="portfolio-slide active">
+        <img alt="" src="./company logo/aquatrx..png"/>
+       </article>
+       <article class="portfolio-slide">
+        <img alt="" src="assets/portfolio-2.jpg"/>
+       </article>
+       <article class="portfolio-slide">
+        <img alt="" src="assets/portfolio-3.jpg"/>
+       </article>
+       <article class="portfolio-slide">
+        <img alt="" src="assets/portfolio-4.jpg"/>
+       </article>
+       <article class="portfolio-slide">
+        <img alt="" src="assets/portfolio-5.jpg"/>
+       </article>
+       <article class="portfolio-slide">
+        <img alt="" src="assets/portfolio-6.jpg"/>
+       </article>
+      </div>
+      <button class="portfolio-arrow portfolio-prev" type="button" aria-label="السابق">‹</button>
+      <button class="portfolio-arrow portfolio-next" type="button" aria-label="التالي">›</button>
+      <div class="portfolio-dots" aria-label="معرض الأعمال">
+       <button class="portfolio-dot active" type="button" aria-label="الصورة 1"></button>
+       <button class="portfolio-dot" type="button" aria-label="الصورة 2"></button>
+       <button class="portfolio-dot" type="button" aria-label="الصورة 3"></button>
+       <button class="portfolio-dot" type="button" aria-label="الصورة 4"></button>
+       <button class="portfolio-dot" type="button" aria-label="الصورة 5"></button>
+       <button class="portfolio-dot" type="button" aria-label="الصورة 6"></button>
+      </div>
+      <div class="portfolio-caption">
+       <h3 data-i18n="portfolio_card">معرض أعمال الصادق الأمين</h3>
+       <p data-i18n="portfolio_card_desc"></p>
+      </div>
+     </div>
+    </div>
+   </section> -->
+   <section class="partners" id="partners">
+    <div class="container">
+     <div class="section-head">
+      <div class="section-kicker" data-i18n="partners_kicker">
+       شركاؤنا
+      </div>
+      <h2 data-i18n="partners_title">
+       علاقات عمل طويلة الأمد
+      </h2>
+      <p data-i18n="partners_desc">
+       حرصنا منذ تأسيس الشركة على بناء علاقات عمل مع الأطراف المرتبطة بسلسلة التجارة والشحن.
+      </p>
+     </div>
+     <div class="partner-grid">
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/AL-Andalous.png" alt="AL-Andalous" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="AL-Andalous" data-en="AL-Andalous">AL-Andalous</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/aquatrx..png" alt="aquatrx" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="aquatrx" data-en="aquatrx">aquatrx</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/ATEC- Arabian Telecontrol And Engineering Center.png" alt="ATEC - Arabian Telecontrol And Engineering Center" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="ATEC - Arabian Telecontrol And Engineering Center" data-en="ATEC - Arabian Telecontrol And Engineering Center">ATEC - Arabian Telecontrol And Engineering Center</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/auto home center.png" alt="auto home center" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="auto home center" data-en="auto home center">auto home center</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/auto plastet gypt.png" alt="Auto Plast Egypt" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Auto Plast Egypt" data-en="Auto Plast Egypt">Auto Plast Egypt</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/auto samir rayan.png" alt="auto samir rayan" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="auto samir rayan" data-en="auto samir rayan">auto samir rayan</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/brandpharma.png" alt="brandpharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="brandpharma" data-en="brandpharma">brandpharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/cairo-metal.png" alt="cairo-metal" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="cairo-metal" data-en="cairo-metal">cairo-metal</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/Clavita Pharma.png" alt="Clavita Pharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Clavita Pharma" data-en="Clavita Pharma">Clavita Pharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/eglight-elsewedy.png" alt="eglight-elsewedy" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="eglight-elsewedy" data-en="eglight-elsewedy">eglight-elsewedy</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/Engineering for Industrial Services.png" alt="Engineering for Industrial Services" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Engineering for Industrial Services" data-en="Engineering for Industrial Services">Engineering for Industrial Services</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/GYPTO PHARMA.png" alt="GYPTO PHARMA" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="GYPTO PHARMA" data-en="GYPTO PHARMA">GYPTO PHARMA</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/Halence Pharma.png" alt="Halence Pharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Halence Pharma" data-en="Halence Pharma">Halence Pharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/Kandil Misr.png" alt="Kandil Misr" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Kandil Misr" data-en="Kandil Misr">Kandil Misr</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/nile ict.png" alt="nile ict" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="nile ict" data-en="nile ict">nile ict</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/omega pharma.png" alt="omega pharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="omega pharma" data-en="omega pharma">omega pharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/optimarc-pharma.png" alt="optimarc-pharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="optimarc-pharma" data-en="optimarc-pharma">optimarc-pharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/saja pharma.png" alt="saja pharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="saja pharma" data-en="saja pharma">saja pharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/SAVETO.png" alt="SAVETO" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="SAVETO" data-en="SAVETO">SAVETO</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/smart lighting.png" alt="smart lighting" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="smart lighting" data-en="smart lighting">smart lighting</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/SoulEgypt.png" alt="SoulEgypt" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="SoulEgypt" data-en="SoulEgypt">SoulEgypt</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/sovalue Pharma.png" alt="sovalue Pharma" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="sovalue Pharma" data-en="sovalue Pharma">sovalue Pharma</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/TCL ALFA LIGHTING.png" alt="TCL ALFA LIGHTING" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="TCL ALFA LIGHTING" data-en="TCL ALFA LIGHTING">TCL ALFA LIGHTING</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/Ultra Lighting.png" alt="Ultra Lighting" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Ultra Lighting" data-en="Ultra Lighting">Ultra Lighting</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/Wireless Dynamics.png" alt="Wireless Dynamics" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="Wireless Dynamics" data-en="Wireless Dynamics">Wireless Dynamics</div>
+      </div>
+      <div class="partner">
+       <div class="partner-logo">
+        <img src="company logo/ايكون للألواح المعزولة.png" alt="ايكون للألواح المعزولة" loading="lazy"/>
+       </div>
+       <div class="partner-name" data-ar="ايكون للألواح المعزولة" data-en="Icon Insulated Panels">ايكون للألواح المعزولة</div>
+      </div>
+     <div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_01.png" alt="العالمية الاصلية" loading="lazy"/></div>
+ <div class="partner-name" data-ar="العالمية الاصلية" data-en="العالمية الاصلية">العالمية الاصلية</div>
+</div>
 
-    <script>
-      const dialog = document.querySelector('.contact-dialog');
-      const whatsappLink = document.querySelector('#whatsapp-link');
-      const callLink = document.querySelector('#call-link');
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_02.png" alt="بروفيشنال اكسس" loading="lazy"/></div>
+ <div class="partner-name" data-ar="بروفيشنال اكسس" data-en="بروفيشنال اكسس">بروفيشنال اكسس</div>
+</div>
 
-      document.querySelectorAll('.phone-contact').forEach((button) => {
-        button.addEventListener('click', (event) => {
-          event.preventDefault();
-          const number = button.dataset.number;
-          whatsappLink.href = `https://wa.me/${number}`;
-          callLink.href = `tel:+${number}`;
-          dialog.showModal();
-        });
-      });
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_03.png" alt="سيدار فارما" loading="lazy"/></div>
+ <div class="partner-name" data-ar="سيدار فارما" data-en="سيدار فارما">سيدار فارما</div>
+</div>
 
-      document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-      dialog.addEventListener('click', (event) => {
-        if (event.target === dialog) dialog.close();
-      });
-    </script>
-  </body>
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_04.png" alt="ديستاتش" loading="lazy"/></div>
+ <div class="partner-name" data-ar="ديستاتش" data-en="ديستاتش">ديستاتش</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_05.png" alt="تريبل اس" loading="lazy"/></div>
+ <div class="partner-name" data-ar="تريبل اس" data-en="تريبل اس">تريبل اس</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_06.png" alt="القاهرة للاعمال الهندسية والفنيه" loading="lazy"/></div>
+ <div class="partner-name" data-ar="القاهرة للاعمال الهندسية والفنيه" data-en="القاهرة للاعمال الهندسية والفنيه">القاهرة للاعمال الهندسية والفنيه</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_07.png" alt="التروك المنير" loading="lazy"/></div>
+ <div class="partner-name" data-ar="التروك المنير" data-en="التروك المنير">التروك المنير</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_08.png" alt="باور ايجبت" loading="lazy"/></div>
+ <div class="partner-name" data-ar="باور ايجبت" data-en="باور ايجبت">باور ايجبت</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_09.png" alt="كاسترول" loading="lazy"/></div>
+ <div class="partner-name" data-ar="كاسترول" data-en="كاسترول">كاسترول</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_10.png" alt="ايجل" loading="lazy"/></div>
+ <div class="partner-name" data-ar="ايجل" data-en="ايجل">ايجل</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_11.png" alt="دريم للأثاث" loading="lazy"/></div>
+ <div class="partner-name" data-ar="دريم للأثاث" data-en="دريم للأثاث">دريم للأثاث</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_12.png" alt="الظاهر" loading="lazy"/></div>
+ <div class="partner-name" data-ar="الظاهر" data-en="الظاهر">الظاهر</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_13.png" alt="مان تريد" loading="lazy"/></div>
+ <div class="partner-name" data-ar="مان تريد" data-en="مان تريد">مان تريد</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_14.png" alt="ترانس ورد" loading="lazy"/></div>
+ <div class="partner-name" data-ar="ترانس ورد" data-en="ترانس ورد">ترانس ورد</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_15.png" alt="اولي انيرجي" loading="lazy"/></div>
+ <div class="partner-name" data-ar="اولي انيرجي" data-en="اولي انيرجي">اولي انيرجي</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_16.png" alt="الترا ووتر" loading="lazy"/></div>
+ <div class="partner-name" data-ar="الترا ووتر" data-en="الترا ووتر">الترا ووتر</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_17.png" alt="الملكة للتوريدات" loading="lazy"/></div>
+ <div class="partner-name" data-ar="الملكة للتوريدات" data-en="الملكة للتوريدات">الملكة للتوريدات</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_18.png" alt="عمارة للتوكيلات" loading="lazy"/></div>
+ <div class="partner-name" data-ar="عمارة للتوكيلات" data-en="عمارة للتوكيلات">عمارة للتوكيلات</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_19.png" alt="لايت تكنولوجي" loading="lazy"/></div>
+ <div class="partner-name" data-ar="لايت تكنولوجي" data-en="لايت تكنولوجي">لايت تكنولوجي</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_20.png" alt="المتحدة للتجارة العالمية" loading="lazy"/></div>
+ <div class="partner-name" data-ar="المتحدة للتجارة العالمية" data-en="المتحدة للتجارة العالمية">المتحدة للتجارة العالمية</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_21.png" alt="الهندسة للانظمة والمشروعات" loading="lazy"/></div>
+ <div class="partner-name" data-ar="الهندسة للانظمة والمشروعات" data-en="الهندسة للانظمة والمشروعات">الهندسة للانظمة والمشروعات</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_22.png" alt="el-rawan" loading="lazy"/></div>
+ <div class="partner-name" data-ar="el-rawan" data-en="el-rawan">el-rawan</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_23.png" alt="malti trade" loading="lazy"/></div>
+ <div class="partner-name" data-ar="malti trade" data-en="malti trade">malti trade</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_24.png" alt="automaet" loading="lazy"/></div>
+ <div class="partner-name" data-ar="automaet" data-en="automaet">automaet</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_25.png" alt="elqahera" loading="lazy"/></div>
+ <div class="partner-name" data-ar="elqahera" data-en="elqahera">elqahera</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_26.png" alt="roma" loading="lazy"/></div>
+ <div class="partner-name" data-ar="roma" data-en="roma">roma</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_27.png" alt="ucmt" loading="lazy"/></div>
+ <div class="partner-name" data-ar="ucmt" data-en="ucmt">ucmt</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_28.png" alt="venus cargo" loading="lazy"/></div>
+ <div class="partner-name" data-ar="venus cargo" data-en="venus cargo">venus cargo</div>
+</div>
+
+<div class="partner">
+ <div class="partner-logo"><img src="company_logo/partner_29.png" alt="3A" loading="lazy"/></div>
+ <div class="partner-name" data-ar="3A" data-en="3A">3A</div>
+</div>
+</div>
+    </div>
+   </section>
+   <section class="contact" id="contact">
+    <div class="container contact-grid">
+     <div>
+      <div class="section-kicker" data-i18n="contact_kicker">
+       تواصل معنا
+      </div>
+      <h2 data-i18n="contact_title">
+       خلّي شحنتك في إيد أمينة
+      </h2>
+      <p data-i18n="contact_desc">
+       تواصل معنا للاستفسار عن التخليص الجمركي، الشحن، النقل أو أي من خدماتنا اللوجستية.
+      </p>
+      <div class="contact-list">
+       <div class="contact-item">
+        <div class="ci">
+         ☎
+        </div>
+        <div>
+         <b data-i18n="phone_label">
+          الهاتف / الموبايل
+         </b>
+         <a class="phone-action" data-phone="+201114624320" href="#">
+          +201114624320
+         </a>
+         <br/>
+         <a class="phone-action" data-phone="+201222221952" href="#">
+          +201222221952
+         </a>
+         <br/>
+         <a class="phone-action" data-phone="+201111595201" href="#">
+          +201111595201
+         </a>
+         <br/>
+         <a class="phone-action" data-phone="+201224847614" href="#">
+          +201224847614
+         </a>
+        </div>
+       </div>
+       <div class="contact-item">
+        <div class="ci">
+         ✉
+        </div>
+        <div>
+         <b data-i18n="email_label">
+          البريد الإلكتروني
+         </b>
+         <a href="mailto:alsadekelamen@yahoo.com">
+          alsadekelamen@yahoo.com
+         </a>
+        </div>
+       </div>
+       <div class="contact-item">
+        <div class="ci">
+         f
+        </div>
+        <div>
+         <b data-i18n="facebook_label">
+          Facebook
+         </b>
+         <a href="https://www.facebook.com/elsadek.elamin1" rel="noopener" target="_blank">
+          elsadek.elamin1
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="contact-box">
+      <h3 data-i18n="locations_title">
+        مواقع العمل
+      </h3>
+      <div class="address">
+       <b data-i18n="cairo">
+        القاهرة (المقر الرئيسي)
+       </b>
+       <span>
+        <a href="https://maps.app.goo.gl/gvpMwqcaZ4wHDKhv7" data-ar="مجمع المصدرين ووكلاء الشحن — قرية البضائع — مطار القاهرة" data-en="Exporters & Freight Forwarders Complex — Cargo Village — Cairo Airport">
+         مجمع المصدرين ووكلاء الشحن — قرية البضائع — مطار القاهرة
+        </a href="">
+       </span>
+      </div>
+      <div class="address">
+       <b data-i18n="alex">
+        الإسكندرية
+       </b>
+       <span>
+        <a data-ar="ميناء الإسكندرية — برج العاصمة — شقة 9 — الدور العاشر — أمام شركة MTS" data-en="Alexandria Port — Al Assema Tower — 9th Floor, Apt. 9 — In front of MTS"
+        href="https://maps.app.goo.gl/oV9zdVyosRzSJ1326">
+         ميناء الإسكندرية — برج العاصمة — شقة 9 — الدور العاشر — أمام شركة MTS
+        </a>
+       </span>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+<div aria-hidden="true" class="phone-modal" id="phoneModal">
+   <div class="phone-modal-backdrop" data-close-phone="">
+   </div>
+   <div aria-labelledby="phoneModalTitle" aria-modal="true" class="phone-modal-card" role="dialog">
+    <button aria-label="إغلاق" class="phone-modal-close" data-close-phone="" type="button">
+     ×
+    </button>
+    <div class="phone-modal-icon">
+     ☎
+    </div>
+    <h3 data-i18n="phone_modal_title" id="phoneModalTitle">
+     تواصل معنا
+    </h3>
+    <p data-i18n="phone_modal_desc">
+     اختار الطريقة المناسبة للتواصل مع الرقم:
+    </p>
+    <div class="phone-modal-actions">
+     <a class="phone-choice whatsapp-choice" href="#" id="whatsappAction" rel="noopener" target="_blank">
+      <span>
+       ◉
+      </span>
+      <strong data-i18n="whatsapp">
+       واتساب
+      </strong>
+     </a>
+     <a class="phone-choice call-choice" href="#" id="callAction">
+      <span>
+       ☎
+      </span>
+      <strong data-i18n="call">
+       مكالمة هاتفية
+      </strong>
+     </a>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <div class="container footer-row">
+    <div class="footer-brand">
+     الصادق الأمين — منذ 2005
+    </div>
+    <div>
+     Customs Clearance • Freight Forwarding • Transportation • Logistics Services
+    </div>
+    <div>
+     ©
+     <span id="year">
+     </span>
+     Al Sadiq Al Ameen
+    </div>
+   </div>
+  </footer>
+  
+   <script src="script.js"></script>
+</body>
 </html>
